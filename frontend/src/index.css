@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+}
+
+/* Flat, simple building blocks — solid colors only, no gradients. */
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition-colors duration-150 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+.btn-primary {
+  @apply btn bg-primary text-white hover:bg-primary-dark;
+}
+.btn-outline {
+  @apply btn border border-primary text-primary bg-white hover:bg-primary-soft;
+}
+.btn-danger {
+  @apply btn bg-danger text-white hover:bg-red-800;
+}
+.btn-ghost {
+  @apply btn text-muted hover:bg-slate-100;
+}
+
+.card {
+  @apply bg-white border border-border rounded-lg shadow-card p-5;
+}
+
+.input {
+  @apply w-full rounded-md border border-border px-3 py-2 text-sm text-ink placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary-light focus:border-primary;
+}
+
+.label {
+  @apply block text-sm font-medium text-ink mb-1;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+}
+.badge-pending {
+  @apply badge bg-amber-50 text-amber-700;
+}
+.badge-approved {
+  @apply badge bg-green-50 text-success;
+}
+.badge-rejected {
+  @apply badge bg-red-50 text-danger;
+}
+.badge-revoked {
+  @apply badge bg-slate-100 text-muted;
+}

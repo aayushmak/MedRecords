@@ -1,0 +1,8 @@
+backend/uploads/*
+!backend/uploads/.gitkeep
+node_modules/
+build/
+.env
+blockchain/cache/
+blockchain/artifacts/
+blockchain/deployed/

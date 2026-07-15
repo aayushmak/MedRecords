@@ -1,0 +1,15 @@
+{
+  "name": "medrecords-blockchain",
+  "version": "1.0.0",
+  "description": "Smart contracts for the Patient-Centered Medical Records Management System",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0"
+  }
+}
