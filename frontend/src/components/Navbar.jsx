@@ -19,13 +19,7 @@ export default function Navbar() {
   return (
     <header className="border-b border-border bg-white">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="w-8 h-8 rounded-md bg-primary flex items-center justify-center text-white font-bold text-sm">
-            M
-          </span>
-          <span className="font-semibold text-ink">MedRecords</span>
-        </Link>
-
+        <img src="/Med.png" alt="" className="h-12"/>
         {user && (
           <div className="flex items-center gap-4">
             <span className="hidden sm:inline text-sm text-muted capitalize">{user.role}</span>

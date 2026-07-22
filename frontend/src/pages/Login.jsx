@@ -60,15 +60,9 @@ export default function Login() {
 
   return (
     <div className="min-h-screen bg-white flex items-center justify-center px-6">
-      <div className="w-full max-w-md">
-        <div className="text-center mb-8">
-          <span className="inline-flex w-12 h-12 rounded-md bg-primary items-center justify-center text-white font-bold text-lg">
-            M
-          </span>
-          <h1 className="mt-4 text-2xl font-semibold text-ink">MedRecords</h1>
-          <p className="text-muted text-sm mt-1">
-            Patient-controlled medical records, secured by your wallet.
-          </p>
+      <div className="w-full max-w-md ">
+        <div className="flex w-full justify-center p-4">
+          <img src="/Med.png" alt="" className="h-20 " />
         </div>
 
         <div className="card">
@@ -136,7 +130,6 @@ export default function Login() {
                   >
                     <option value="patient">Patient</option>
                     <option value="doctor">Doctor</option>
-                    <option value="admin">Admin</option>
                   </select>
                 </div>
               </>
